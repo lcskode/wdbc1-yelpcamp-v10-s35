@@ -1,10 +1,12 @@
-#### S35-L298 YelpCamp V10  
+#### S35-L299-300 YelpCamp V10  
 **Editing Campgrounds**  
 * Add Method-Override  
 * Add EDIT ROUTE for campgrounds  
 * Add link to edit page  
 * Add update route  
 * Fix $set problem  
+* Add DESTROY route  
+* Add Delete button  
 
 #### S34-L297 YelpCamp V9  
 **Users and Campgrounds**  
