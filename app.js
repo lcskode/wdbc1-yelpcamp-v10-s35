@@ -4,6 +4,7 @@ var express         = require("express"),
     mongoose        = require("mongoose"),
     passport        = require("passport"),
     localStrategy   = require("passport-local"),
+    methodOverride  = require("method-override"),
     // // Use campground schema from /models/campground.js file 
     // Campground      = require("./models/campground"),
     // // Use comment schema from /models/comment.js file
@@ -33,6 +34,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 // use public directory with absolute path
 app.use(express.static(__dirname + "/public"));
+// tell app to use _method
+app.use(methodOverride("_method"));
+
 // remove and create new data from db
 // seedDB();
 
