@@ -1,5 +1,11 @@
+#### S35-L303 YelpCamp V10.2  
+**Editing Comments**  
+* Add Edit route for comments  
+* Add Edit button  
+* Add Update route  
+
 #### S35-L301-302 YelpCamp V10.1  
-**Authorization**  
+**Authorization - Campgrounds**  
 * User can only edit his/her campgrounds  
 * User can only delete his/her campgrounds  
 * Hide/Show edit and delete buttons  
