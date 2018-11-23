@@ -1,4 +1,4 @@
-#### S35-L301 YelpCamp V10.1  
+#### S35-L301-302 YelpCamp V10.1  
 **Authorization**  
 * User can only edit his/her campgrounds  
 * User can only delete his/her campgrounds  
