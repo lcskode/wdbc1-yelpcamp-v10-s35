@@ -46,16 +46,19 @@
                 <%= comment.text %>
               </p>
 
-              <!-- ADDED BUTTONS FOR EDIT AND DELETE COMMENT -->
-              <a class="btn btn-xs btn-warning" href="/campgrounds/<%= campground._id %>/comments/<%= comment._id %>/edit">
-                Edit
-              </a> <!-- Add edit button -->
-              
-              <form id="delete-form"                    
-                    action="/campgrounds/<%= campground._id %>/comments/<%= comment._id %>?_method=DELETE" 
-                    method="POST">
-                <button class="btn btn-xs btn-danger">Delete</button>
-              </form>
+
+              <% if (currentUser && comment.author.id.equals(currentUser._id)) { %>
+                <!-- ADDED BUTTONS FOR EDIT AND DELETE COMMENT -->
+                <a class="btn btn-xs btn-warning" href="/campgrounds/<%= campground._id %>/comments/<%= comment._id %>/edit">
+                  Edit
+                </a> <!-- Add edit button -->
+                <form id="delete-form"                    
+                      action="/campgrounds/<%= campground._id %>/comments/<%= comment._id %>?_method=DELETE" 
+                      method="POST">
+                  <button class="btn btn-xs btn-danger">Delete</button>
+                </form>
+              <% } %>
+
 
             </div><!-- ./col-md-12 -->
           </div><!-- ./row -->
