@@ -18,12 +18,17 @@
             <h4><a href="#"><%= campground.name %></a></h4>
             <p><%= campground.description %></p>
             <p>
-             <em>Submitted By <%= campground.author.username %></em>
+              <em>Submitted By <%= campground.author.username %></em>
             </p>
-            <a class="btn btn-warning" href="/campgrounds/<%= campground._id %>/edit">Edit</a> <!-- Add edit button -->
-            <form id="delete-form" action="/campgrounds/<%= campground._id %>?_method=DELETE" method="POST">
-              <button class="btn btn-danger">Delete</button>
-            </form>
+
+            <!-- Show Edit and Delete button if user is logged in AND owner of campground, HIDE if not -->
+            <% if (currentUser && campground.author.id.equals(currentUser._id)) { %>
+              <a class="btn btn-warning" href="/campgrounds/<%= campground._id %>/edit">Edit</a> <!-- Add edit button -->
+              <form id="delete-form" action="/campgrounds/<%= campground._id %>?_method=DELETE" method="POST">
+                <button class="btn btn-danger">Delete</button>
+              </form>
+            <% } %>
+            
           </div> <!-- ./caption-full -->
       </div><!-- ./thumbnail -->
       <div class="well">
