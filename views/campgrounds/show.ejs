@@ -51,8 +51,10 @@
                 Edit
               </a> <!-- Add edit button -->
               
-              <form id="delete-form" action="" method="POST">
-                <button class="btn btn-danger">Delete</button>
+              <form id="delete-form"                    
+                    action="/campgrounds/<%= campground._id %>/comments/<%= comment._id %>?_method=DELETE" 
+                    method="POST">
+                <button class="btn btn-xs btn-danger">Delete</button>
               </form>
 
             </div><!-- ./col-md-12 -->
