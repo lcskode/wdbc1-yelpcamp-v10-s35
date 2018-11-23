@@ -1,3 +1,9 @@
+#### S35-L301 YelpCamp V10.1  
+**Authorization**  
+* User can only edit his/her campgrounds  
+* User can only delete his/her campgrounds  
+* Hide/Show edit and delete buttons  
+
 #### S35-L299-300 YelpCamp V10  
 **Editing Campgrounds**  
 * Add Method-Override  
