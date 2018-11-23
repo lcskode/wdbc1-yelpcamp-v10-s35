@@ -3,10 +3,10 @@
 * Add Edit route for comments  
 * Add Edit button  
 * Add Update route  
+
 **Deleting Comments**  
 * Add Destroy route  
 * Add Delete button  
-
 
 #### S35-L301-302 YelpCamp V10.1  
 **Authorization - Campgrounds**  
