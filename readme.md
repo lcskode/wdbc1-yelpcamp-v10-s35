@@ -1,9 +1,11 @@
+#### S35-L307 YelpCamp V10.4  
+* Refactor Middleware  
+
 #### S35-L306 YelpCamp V10.3  
 **Authorization - Comments**  
 * User can only edit his/her comments  
 * User can only delete his/her comments  
 * Hide/Show edit and delete buttons  
-* Refactor Middleware  
 
 #### S35-L303-305 YelpCamp V10.2  
 **Editing Comments**  
