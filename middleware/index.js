@@ -1,3 +1,6 @@
+var Campground = require("../models/campground");
+var Comment = require("../models/comment");
+
 // all the middleware goes here
 // create middleware obj for all middlewares
 
